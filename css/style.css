@@ -1,0 +1,344 @@
+@import 'https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans';
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.top{
+    background-color: #9ab8ef;
+    height: 250px;
+    overflow-x:hidden;
+    overflow-y: hidden;
+/*    background-image: url(img/header2.png);*/
+   
+}
+
+#imgHeader{
+    display: block;   
+    visibility: hidden;
+    display: none;
+    margin: 0;
+}
+
+
+}
+
+#imgHeader2{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.middle{
+    transition: all 0.9s ease;
+    background-color:lightcyan;
+    height: 500px;
+}
+
+.bottom {
+    transition: all 0.9s ease;
+    background-color:rgb(169, 213, 214);
+    height: 500px;
+}
+
+/*---------------- main Body of html page-------------------------*/
+
+
+#Words{
+    padding: 20px;
+    font-size: 35px;
+    text-align: left;
+    text-indent: 2em;
+    word-spacing: 15px;
+    line-height: 70px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
+#cat_1{
+    height: 250px;
+    width: 450px;
+    float: left;
+    margin: 15px 20px 20px 10px;
+}
+
+.middle:hover{
+    background-color: lightgoldenrodyellow;
+}
+
+
+/*--------------Second half of html page-------------------------*/
+
+.bottom:hover{
+    background-color: lightsteelblue;
+   
+}
+
+#cat_2{
+    height: 350px;
+    width: 500px;
+    float: right;
+    margin: 0px 0px 0px 20px;
+}
+
+#Words2{
+    padding: 20px;
+    font-size: 35px;
+    text-align: left;
+    text-indent: 2em;
+    word-spacing: 15px;
+    line-height: 70px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*-------------Header/ title/ refresh--------------------*/
+.title {
+    position: relative;
+    transition:  0.5s ease;
+    height: 120px;
+    
+}
+
+.sticky {
+	position: fixed; 
+	top: 0;
+    left: 0;
+    width: 100%;
+	height: 50px; 
+	z-index: 1;
+}
+
+.sticky:hover {
+   height: 85px;
+}
+
+
+.title-word{
+    height: inherit;
+    font-size: 30px;
+    text-align: center;
+    background-color: #575A4B;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+}
+
+#date {
+    margin-top: 32px;
+    text-align: center;
+    transition:  0.5s ease;
+    color:beige;
+    
+}
+
+.click{
+    float: left;
+    height: inherit;
+    width: 300px;
+    background-color:#d9a457;
+    position: absolute;
+    top:0px;
+    left:0px;
+
+}
+
+#button {
+    transition:  0.5s ease;
+    margin-top: 32px;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+}
+
+.click:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.click p:hover{
+   cursor: pointer;
+}
+
+.click p :active{
+    
+}
+
+
+
+
+/************** Fluidity ********************/
+@media (min-width:1400px){
+    #imgHeader2{
+        display: block;   
+        visibility: hidden;
+        display: none;
+        margin: 0;
+    }
+    
+    #imgHeader{
+        display: block;
+        visibility: visible;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+}
+
+@media (min-width:1500px){
+    #Words{font-size: 35px; }
+    #Words2{font-size: 35px;}
+    .middle{height: 550px;}
+    .bottom{height: 550px;}
+}
+
+@media (max-width:1500px){
+    #Words{font-size: 32px;}
+    #Words2{font-size: 32px;}
+    .middle{ height: 650px; }
+    .bottom{ height: 850px;}
+}
+
+@media (max-width:1200px){
+    .middle{ height: 650px;}
+    .bottom{height: 650px;}
+    #Words{ font-size: 26px; line-height: 40px;}
+    #Words2{ font-size: 26px; line-height: 40px;}
+   
+}
+
+@media (max-width:1000px){
+    .middle{ height: 650px;}
+    .bottom{height: 650px;}
+    #Words{ font-size: 20px; line-height: 40px;}
+    #Words2{ font-size: 20px; line-height: 40px;}
+   
+}
+
+@media (max-width:800px){
+    #Words{
+        font-size: 20px;
+        word-spacing:10px;
+        line-height: 40px;
+    }
+    #Words2{
+        font-size: 20px;
+        word-spacing:10px;
+        line-height: 40px;
+    }
+    .middle{height: 700px;}
+    .bottom{height: 700px;}
+ }
+
+@media (max-width:700px){
+    .middle{height: 900px;}
+    .bottom{height: 950px;}
+    #Words{
+        word-spacing: 7px;
+        line-height:30px;
+    }
+    #Words2{
+        word-spacing:7px;
+        line-height: 40px;
+     }
+}
+
+@media (max-width:400px){
+    .middle{height: 1000px;}
+    .bottom{height: 1100px;}
+    #Words{
+        word-spacing: 5px;
+        line-height:30px;
+    }
+    #Words2{
+        word-spacing:5px;
+        line-height: 40px;
+    }
+}
+
+/*******************************************/
+
+
+/*styling for the blank spaces*/
+
+#blanks{
+    color:brown;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom:2px dotted black;
+    font-family: 'Indie Flower', cursive;
+    transition: 0.5s ease;
+}
+
+#blanks:hover{
+    color: dimgray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
